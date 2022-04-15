@@ -39,10 +39,10 @@ find_package(OpenSceneGraph REQUIRED COMPONENTS
     osgTerrain
     )
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(FREEALUT REQUIRED freealut)
-if(WIN32)
-    link_directories(${FREEALUT_LIBRARY_DIRS})
-endif()
+#pkg_check_modules(FREEALUT REQUIRED freealut)
+#if(WIN32)
+    #link_directories(${FREEALUT_LIBRARY_DIRS})
+#endif()
 
 set(SRC
     src/ALBuffer.cpp
